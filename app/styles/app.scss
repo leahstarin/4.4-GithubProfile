@@ -1,0 +1,39 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.input-group{
+  display: inline-block;
+  height: 28px;
+  width: 360px;
+}
+
+.cat{
+  display: inline-block;
+
+}
+
+.nav {
+  display: inline-block;
+  li {
+  display: inline-block;
+  }
+}
+
+.header{
+  background-color: #f5f5f5;
+}
