@@ -11,7 +11,7 @@
 
     <div class="Container-fluid header">
       <div class="row">
-       <div class="col-lg-12 ">
+       <div class="col-sm-12 ">
          <span class="mega-octicon octicon-mark-github cat"></span>
            <div class="input-group">
              <span class="input-group-btn"></span>
@@ -23,43 +23,70 @@
              <li><a href="#">Gist</a></li>
           </ul>
         </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-danger"><span class="mega-octicon octicon-plus"></span></button>
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-danger"></button>
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
+
+          <div class="buttoncontainer">
+             <div class="btn-group leftbutton">
+               <button class="btn btn-default btn-xs dropdown-toggle plusbutton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="mega-octicon octicon-plus"></span><span class="caret"></span>
+               </button>
+               <ul class="dropdown-menu">
+               </ul>
+             </div>
+             <div class="btn-group rightbutton">
+               <button class="btn btn-default btn-xs dropdown-toggle avatarbutton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="show-template"></span><span class="caret"></span>
+               </button>
+               <ul class= "dropdown-menu">
+               </ul>
             </div>
-
+         </div>
       </div>
+   </div>
+     <div class="sideBar col-sm-3">
+       <div class="row">
+       <div class="fullname"></div>
+       <div class="profilepic"></div>
+        <ul class="sideBar-date">
+           <li><span>Insert-Emoji-clock</span></li>
+           <li><span>Joined on Jan 6, 2016</span></li>
+        </ul>
+        <ul class="popularitycontest">
+           <li>1 Follower</li>
+           <li>0 Starred</li>
+           <li>0 Following</li>
+        </ul>
+      </div>
+   </div>
+
+ <div class="contributions col-sm-9">
+   <div class="row">
+   <div class="publishedwork">
+   <ul class="workdone">
+     <li>insert+omticonContributions </li>
+     <li>insertbookomticonRepositories</li>
+     <li>insertomticonPublic activity</li>
+   </ul>
+   <ul class="">
+     <li>Follow<button type="button" name="button"></button></li>
+     <li>insert dropdown menu</li>
+   </ul>
+
+   </div>
+
+   </div>
+
+ </div>
 
 
 
+    <script id="show-template" type="text/x-handlebars-template">
+      <img src="{{avatar_url}}">
+      </script>
 
-    </div>
-
-
+   <script id="second-template" type="text/x-handlebars-template">
+     <img src="{{avatar_url}}">
+     <p class= "name">{{name}}</p>
+   </script>
 
     <script src="js/bundle.js"></script>
   </body>
