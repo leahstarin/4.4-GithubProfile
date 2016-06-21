@@ -5878,7 +5878,24 @@ img {
 
 .show-template img {
   height: 20px;
-  width: 20px;
-  margin-right: 161px; }
+  width: 20px; }
+
+.row {
+  height: 55px; }
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px; }
+
+.btn-primary {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  background-color: #60b044; }
+
+.ml-3 {
+  margin-left: 12px !important; }
 
 /*# sourceMappingURL=app.css.map */
